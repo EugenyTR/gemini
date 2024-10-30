@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zoom to Gemini to Telegram</title>
+  <script defer src="/socket.io/socket.io.js"></script>
+  <script defer src="/js/app.js"></script>
+</head>
+<body>
+  <h1>Configure the Application</h1>
+  <form id="configForm">
+    <label>Zoom API Key:</label>
+    <input type="text" id="zoomApiKey" required><br>
+    <label>Gemini API Key:</label>
+    <input type="text" id="geminiApiKey" required><br>
+    <label>Prompt for Gemini:</label>
+    <input type="text" id="geminiPrompt" required><br>
+    <label>Gemini Settings (JSON format):</label>
+    <textarea id="geminiSettings" required></textarea><br>
+    <label>Telegram Bot Token:</label>
+    <input type="text" id="telegramBotToken" required><br>
+    <label>Telegram Chat ID:</label>
+    <input type="text" id="telegramChatID" required><br>
+    <button type="submit">Save Settings</button>
+  </form>
+  <div id="errorDisplay" style="color: red;"></div>
+</body>
+</html>
